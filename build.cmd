@@ -1,5 +1,5 @@
 @echo off
-
+cd/d D:\aesprite
 rem If cl.exe is not available, we try to run the vcvars64.bat
 where cl.exe >nul 2>nul
 if %errorlevel%==1 (
@@ -12,3 +12,4 @@ set PATH=.;%PATH%
 
 powershell -ExecutionPolicy Bypass -File .\build.ps1 %*
 pause
+
